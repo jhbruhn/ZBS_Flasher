@@ -93,6 +93,7 @@ def init():
         server.start('localhost', 8000)
     except Exception as e:
         print("Websocket Err")
+        print(e)
     
 def run():
     try:
@@ -104,3 +105,4 @@ def run():
         time.sleep(0.005)
     except Exception as e:
         print("Websocket Err")
+        print(e)
