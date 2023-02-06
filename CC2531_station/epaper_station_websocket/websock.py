@@ -90,7 +90,7 @@ def init():
     try:
         global server
         server = SynchronousWebsocketServer(connect_callback=connect_callback, disconnect_callback=diconnect_callback)
-        server.start('localhost', 8442)
+        server.start('127.0.0.1', 8000)
     except Exception as e:
         print("Websocket Err")
         print(e)
